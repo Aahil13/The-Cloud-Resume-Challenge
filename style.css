@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  color: #000000;
+  padding-left: 2.5rem;
+  height: fit-content;
+}
+
+header {
+  padding: 2.5rem 0rem;
+  border-bottom: 2px solid gainsboro;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+}
+
+h2 {
+  letter-spacing: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:visited,
+a:active {
+  color: #000000;
+}
+
+.info-boxes h4 {
+  margin-bottom: 0.2rem;
+}
+
+header h4 {
+  font-weight: 400;
+  color: rgb(114, 110, 110);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#angle {
+  background-color: #000000;
+  width: 24rem;
+  height: 20rem;
+  clip-path: polygon(100% 0, 31% 0, 100% 100%);
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  padding-top: 13rem;
+}
+
+section {
+  padding: 2rem 2rem 0 0;
+}
+
+.left-section {
+  border-right: 2px solid gainsboro;
+}
+
+.left-section p {
+  margin: 0.3rem 0;
+}
+
+.right-section {
+  padding-left: 2rem;
+  padding-right: 7rem;
+}
+
+.small-dash {
+  width: 1.8rem;
+  height: 0.2rem;
+  background-color: #000000;
+  margin: 0.3rem 0 1.5rem 0;
+  border-radius: 2rem;
+}
+
+.info {
+  margin-bottom: 2rem;
+}
+
+.info-boxes div {
+  margin: 1rem 0;
+}
+
+.right-section p {
+  text-align: justify;
+}
+
+.profile {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid gainsboro;
+  margin-bottom: 2rem;
+}
+
+.projects ul {
+  padding-left: 2rem;
+}
+
+.project li {
+  margin-bottom: 0.5rem;
+}
+
+.project-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.project h4 {
+  margin: 0.5rem 0;
+}
+
+.project {
+  margin: 2rem 0;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+
+  .right-section {
+    padding-right: 2rem;
+  }
+
+  .project-head {
+    font-size: 0.8rem;
+  }
+
+  #angle {
+    background-color: #000000;
+    width: 19rem;
+    height: 15rem;
+    clip-path: polygon(100% 0, 31% 0, 100% 100%);
+    position: fixed;
+    right: 0;
+    z-index: 1;
+  }
+}
