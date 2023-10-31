@@ -18,9 +18,12 @@ body {
 
 header {
   padding: 2.5rem 0rem;
+  margin-left: 2.5rem;
   border-bottom: 2px solid gainsboro;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   background-color: #ffffff;
   width: 100%;
 }
@@ -70,7 +73,7 @@ nav ul {
   clip-path: polygon(100% 0, 31% 0, 100% 100%);
   position: fixed;
   right: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 main {
@@ -146,6 +149,21 @@ section {
   margin: 2rem 0;
 }
 
+.visitor-counter {
+  background-color: gainsboro;
+  padding: 0.7rem 0.7rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  position: fixed;
+  right: 2.5rem;
+  top: 5rem;
+  z-index: 20;
+}
+
+#visitor-count-element {
+  font-weight: 900;
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 12px;
@@ -160,12 +178,13 @@ section {
   }
 
   #angle {
-    background-color: #000000;
     width: 19rem;
     height: 15rem;
-    clip-path: polygon(100% 0, 31% 0, 100% 100%);
-    position: fixed;
-    right: 0;
-    z-index: 1;
+  }
+
+  .visitor-counter {
+    padding: 0.5rem 0.5rem;
+    right: 1rem;
+    top: 4.5rem;
   }
 }
