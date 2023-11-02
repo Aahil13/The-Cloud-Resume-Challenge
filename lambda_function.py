@@ -26,13 +26,17 @@ def lambda_handler(event, context):
                 ReturnValues='UPDATED_NEW'
             )
             updated_count = response['Attributes']['VisitorCount']
+            
+            # Return the numeric value directly in the response body
             return {
                 'statusCode': 200,
-                'body': json.dumps({'visitor_count': updated_count})
+                'body': json.dumps(updated_count),
+                'headers': {
+                    'Content-Type': 'application/json'
+                }
             }
         except Exception as e:
             return {
                 'statusCode': 500,
                 'body': json.dumps({'error': str(e)})
             }
-
