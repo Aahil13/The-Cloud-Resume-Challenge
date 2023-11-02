@@ -3,4 +3,3 @@ cypress.config.js
 *.json
 /cypress/fixtures
 /cypress/downloads
-/cypress/support
