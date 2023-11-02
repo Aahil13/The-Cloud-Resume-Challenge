@@ -1,5 +1,5 @@
 fetch(
-  "https://ackpbblp7e.execute-api.us-east-1.amazonaws.com/dev/resume_counter",
+  "https://n2j0ubj5wl.execute-api.us-east-1.amazonaws.com/default/resume_counter",
   {
     method: "GET",
     headers: {
@@ -9,7 +9,7 @@ fetch(
 )
   .then((response) => response.json())
   .then((data) => {
-    var count = data.visitor_count.N;
+    var count = data.N;
     let editedText = count == 1 ? "1 visitor" : count + " visitors";
     document.getElementById("visitor-count-element").textContent = editedText;
   })
