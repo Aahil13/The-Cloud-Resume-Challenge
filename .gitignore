@@ -1,5 +1,13 @@
+# Node
 node_modules
-cypress.config.js
 *.json
+
+# cypress 
+cypress.config.js
 /cypress/fixtures
 /cypress/downloads
+
+# Terraform
+Terraform/.terraform
+Terraform/.terraform.lock.hcl
+Terraform/.terraform.tfstate.lock.info
