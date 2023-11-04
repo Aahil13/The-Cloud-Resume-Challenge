@@ -1,0 +1,23 @@
+{
+  "name": "cloud",
+  "version": "1.0.0",
+  "description": "The cloud resume challenge",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aahil13/The-Cloud-Resume-Challenge.git"
+  },
+  "author": "aahil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aahil13/The-Cloud-Resume-Challenge/issues"
+  },
+  "homepage": "https://github.com/Aahil13/The-Cloud-Resume-Challenge#readme",
+  "devDependencies": {
+    "cypress": "^13.4.0"
+  }
+}
