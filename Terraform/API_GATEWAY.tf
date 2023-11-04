@@ -46,7 +46,7 @@ resource "aws_apigatewayv2_integration" "resume_counter" {
 resource "aws_apigatewayv2_route" "resume_counter" {
   api_id = aws_apigatewayv2_api.lambda.id
 
-  route_key = "GET /"
+  route_key = "GET /resume_counter"
   target    = "integrations/${aws_apigatewayv2_integration.resume_counter.id}"
 }
 
