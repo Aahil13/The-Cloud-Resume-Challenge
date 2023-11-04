@@ -392,31 +392,5 @@
         </div>
       </section>
     </main>
-
-    <script>
-      // JavaScript code to add a copyright notice
-      const currentYear = new Date().getFullYear();
-      const copyrightText = `&copy; ${currentYear} Prince Onyeanuna. All Rights Reserved.`;
-
-      const copyrightElement = document.getElementById("copyright");
-      copyrightElement.innerHTML = copyrightText;
-
-      // Add a function to keep the copyright fixed at the bottom
-      function updateCopyrightPosition() {
-        const scrollY = window.scrollY || window.pageYOffset;
-        const footer = document.getElementById("copyright");
-
-        if (scrollY > 0) {
-          footer.style.bottom = "0";
-        } else {
-          footer.style.bottom = "0";
-        }
-      }
-
-      // Call the function on scroll
-      window.addEventListener("scroll", updateCopyrightPosition);
-      // Call the function on page load
-      window.addEventListener("load", updateCopyrightPosition);
-    </script>
   </body>
 </html>
