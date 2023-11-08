@@ -15,3 +15,7 @@ Terraform/.terraform.tfstate.lock.info
 /Terraform/terraform.tfstate.backup
 
 lambda_function.zip
+
+.vscode
+Blog.md
+/images
